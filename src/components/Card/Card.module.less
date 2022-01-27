@@ -1,0 +1,36 @@
+.card {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+    }
+
+    .ant-card-head:after {
+      display: block;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+}
+
+.selected {
+  box-shadow: 0 4px 24px rgba(0, 163, 255, 0.14);
+  border: 1px solid #00a3ff;
+  transition: all 0.3s;
+}
+
+.icon {
+  &:hover {
+    &:not(.disabled) {
+      svg {
+        // border-radius:50%;
+        filter: drop-shadow(0px 0px 8px #00a3ff);
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+
+.disabled{
+
+}
